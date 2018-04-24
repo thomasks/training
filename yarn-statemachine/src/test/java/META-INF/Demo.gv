@@ -1,0 +1,16 @@
+digraph Demo {
+graph [ label="Demo", fontsize=24, fontname=Helvetica];
+node [fontsize=12, fontname=Helvetica];
+edge [fontsize=9, fontcolor=blue, fontname=Arial];
+"Demo.Q5" [ label = Q5 ];
+"Demo.Q3" [ label = Q3 ];
+"Demo.Q0" [ label = Q0 ];
+"Demo.Q0" -> "Demo.Q1" [ label = "DEMO_A0" ];
+"Demo.Q2" [ label = Q2 ];
+"Demo.Q2" -> "Demo.Q3" [ label = "DEMO_A4" ];
+"Demo.Q2" -> "Demo.Q4" [ label = "DEMO_A4" ];
+"Demo.Q2" -> "Demo.Q5" [ label = "DEMO_A4" ];
+"Demo.Q4" [ label = Q4 ];
+"Demo.Q1" [ label = Q1 ];
+"Demo.Q1" -> "Demo.Q2" [ label = "DEMO_A1,\nDEMO_A3,\nDEMO_A2" ];
+}
